@@ -111,4 +111,9 @@ fieldset.grupo .campo {
         align-items: start;
         gap: 5px;
     }
+
+  main {
+    width: 300px;
+    margin: auto;
+  }
 }
