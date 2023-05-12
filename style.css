@@ -70,6 +70,10 @@ fieldset.grupo .campo {
     padding-right: 1em;
 }
 
+.campo textarea {
+    width: 29em;
+}
+
 #check {
     display: flex;
     gap: 4px;
@@ -139,7 +143,8 @@ fieldset.grupo .campo {
     margin-top: 7px;
   }
 
-  #experiencia {
-    width: 10px;
+  .campo textarea {
+    width: 18em;
   }
+
 }
