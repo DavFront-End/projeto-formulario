@@ -15,12 +15,12 @@
          </header>
     
          <form action="cadastro.php" autocomplete="on" method="get">
-            <fieldset class="grupo">
+            <fieldset class="grupo" id="sobre">
                 <section class="campo">
                     <label for="inome"><strong>Nome</strong></label>
                     <input type="text" name="nome" id="inome" required autocomplete="on">
                 </section>
-    
+
                 <section class="campo">
                     <label for="isobrenome"><strong>Sobrenome</strong></label>
                     <input type="text" name="sobrenome" id="isobrenome" required autocomplete="on">
@@ -31,18 +31,24 @@
                 <label for="iemail"><strong>Email</strong></label>
                 <input type="text" name="email" id="iemail" required autocomplete="on">
             </section>
-    
-            <section class="campo">
-                <label>De qual lado da aplicação você desenvolve?</label>
-                <label for="devweb">
-                    <input type="radio" name="devweb" value="frontend">Front-end
-                </label>
-                <label for="devweb">
-                    <input type="radio" name="devweb" value="backend">Back-end
-                </label>
-                <label for="devweb">
-                    <input type="radio" name="devweb" value="fullstack">Fullstack
-                </label>
+            
+            <label>De qual lado da aplicação você desenvolve?</label>
+            <section class="grupo">
+                <div>
+                    <div>
+                        <input type="radio" name="devweb" id="front" value="devweb">
+                        <label for="front">Front-end</label>
+                    </div>
+                    <div>
+                            <input type="radio" name="devweb" id="back" value="devweb">
+                            <label for="back">Back-end</label>
+                    </div>
+                    <div>
+                            <input type="radio" name="devweb" id="full"
+                            value="devweb">
+                            <label for="full">Fullstack</label>
+                    </div>
+                </div>
             </section>
     
             <section class="campo">

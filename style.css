@@ -3,6 +3,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 .container {
@@ -34,7 +35,7 @@ body {
     font-size: 1em;
     color: #59429d;
     margin-top: 2%; 
-    justify-content: center;
+    height: 100vh;
 }
 
 input, select, textarea, button {
@@ -51,7 +52,6 @@ input, select, textarea, button {
 .campo label {
     margin-bottom: 0.2em;
     color: #59429d;
-    display: block;
 }
 
 fieldset.grupo .campo {
@@ -108,12 +108,38 @@ fieldset.grupo .campo {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: start;
         gap: 5px;
     }
 
   main {
-    width: 300px;
-    margin: auto;
+    flex-direction: column;
+    align-items: start;
+    min-width: 200px;
+  }
+
+  #radio {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    width: 100%;
+  }
+
+   section.campo {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+  }
+  
+  #sobre {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .campo label {
+    margin-top: 7px;
+  }
+
+  #experiencia {
+    width: 10px;
   }
 }
